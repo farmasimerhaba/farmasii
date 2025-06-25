@@ -73,7 +73,8 @@
         </div>
         <div class="form-group">
           <label for="telefon">Telefon</label>
-          <input type="tel" id="telefon" name="telefon" required />
+<input type="tel" id="telefon" name="telefon" pattern="[0-9+ ]+" required />
+
         </div>
         <div class="form-group">
           <label for="email">E-posta</label>
@@ -88,14 +89,13 @@
             <option value="Yeni kayıt">Yeni kayıt</option>
           </select>
         </div>
-    <div class="form-group" style="margin-bottom: 10px; text-overflow: ellipsis;">
-  <label style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; cursor: pointer; white-space: nowrap;">
-    <input type="checkbox" id="kvkk" required />
-    <span style="display: inline-block;">
-      KVKK Aydınlatma Metni’ni okudum ve kişisel verilerimin işlenmesine onay veriyorum.
-    </span>
+    <div class="form-group" style="margin-bottom: 10px;">
+  <label for="kvkk" class="kvkk-label">
+    <input type="checkbox" id="kvkk" name="kvkk" required />
+    KVKK Aydınlatma Metni’ni okudum ve kişisel verilerimin işlenmesine onay veriyorum.
   </label>
 </div>
+
 
 
 
@@ -197,3 +197,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+</script>
+</body>
+</html>
