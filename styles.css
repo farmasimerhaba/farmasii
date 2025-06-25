@@ -127,13 +127,13 @@ header {
 .form-box {
   flex: 1;
   background: #fff0f5;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(212, 52, 58, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 470px;
+  height: 501px;
 }
 
 .form-group {
