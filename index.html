@@ -12,11 +12,21 @@
     <div class="container navbar">
       <a href="index.html" class="logo">FarmaSevgi</a>
 
-      <ul class="menu">
-        <li><a href="https://wa.me/905448980484" target="_blank" class="chat-button">Hemen Bilgi Al</a></li>
-      </ul>
-    </div>
-  </header>
+<ul class="menu" style="display: flex; list-style: none; margin: 0; padding: 0; width: 100%; align-items: center;">
+  <li style="flex: 1;"></li> <!-- Boşluk bırakır, sola yaslar -->
+  <li style="margin: 0 20px;">
+    <a href="https://wa.me/905448980484" target="_blank" class="chat-button" data-key="chat" style="color: #fff; text-decoration: none;">Sohbet</a>
+  </li>
+  <li style="flex: 1; display: flex; justify-content: flex-end; gap: 10px;">                                                                                        
+    <a href="#" class="lang-switcher-link" data-lang="tr" style="color: #fff; text-decoration: none;">Türkçe</a>
+    <span style="color: #fff;">|</span>
+    <a href="#" class="lang-switcher-link" data-lang="ar" style="color: #fff; text-decoration: none;">العربية</a>
+  </li>
+</ul>
+
+ </div>
+ </header>
+
 
   <div class="welcome-message container">
     <h1>Hoşgeldiniz</h1>
@@ -62,9 +72,9 @@
   <!-- slider-wrapper bitişi -->
 
   <div style="text-align:center; margin: 30px 0;">
-    <a href="https://www.farmasi.com.tr/sevgiibis48gmailcom/register/beautyinfluencer" style="color: #dc579e; font-weight: bold; font-size: 18px; text-decoration: underline;">
-      Kayıt İle Birlikte %30 İndirim İçin Tıklayınız
-    </a>
+    <a id="entrepreneurLink" href="https://www.farmasi.com.tr/sevgiibis48gmailcom/register/beautyinfluencer" style="color: #dc579e; font-weight: bold; font-size: 18px; text-decoration: underline;">
+  Girişimci Ol - İndirim Şifreni Al!
+</a>
   </div>
   
   <h2>Kayıt Ol</h2>
@@ -263,6 +273,215 @@
         }
       });
     });
+    document.addEventListener('DOMContentLoaded', function () {
+  // Dil çevirileri
+
+    const translations = {
+      tr: {
+        logo: "FarmaSevgi",
+        welcome: "Hoşgeldiniz",
+        chat: "Sohbet",
+        register: "Kayıt Ol",
+        name: "Ad",
+        surname: "Soyad",
+        phone: "Telefon",
+        email: "E-posta",
+        reason: "Kayıt Sebebi",
+        reasonOptions: {
+          suspended: "Hesabım Askıda",
+          order: "Ürün Siparişi",
+          new: "Yeni Kayıt",
+          chat: "Sohbet",
+        },
+        kvkk: "KVKK Aydınlatma Metni'ni okudum ve kişisel verilerimin işlenmesine onay veriyorum.",
+        submit: "Kayıt Ol",
+        success: "Kayıt başarılı! Teşekkürler.",
+        entrepreneur: "Girişimci Ol - İndirim Şifreni Al!",
+        selectPlaceholder: "Lütfen seçin",
+        footer: {
+          disclaimer: "Bu Site Farmasi Enternasyonal Resmi Web Sitesi Değildir",
+          copyright: "© 2025 Siteniz. Tüm hakları saklıdır.",
+          manager: "Platin Müdür Sevgi İbiş",
+          email: "📧 sevgiibis48@gmail.com",
+          phone: "📞 +90 544 898 04 84"
+        }
+      },
+      ar: {
+        logo: "فارماسيفجي",
+        welcome: "مرحباً بكم",
+        chat: "الدردشة",
+        register: "تسجيل",
+        name: "الاسم",
+        surname: "اللقب",
+        phone: "الهاتف",
+        email: "البريد الإلكتروني",
+        reason: "سبب التسجيل",
+        reasonOptions: {
+          suspended: "حسابي معلق",
+          order: "طلب منتج",
+          new: "تسجيل جديد"
+          
+        },
+        kvkk: "لقد قرأت سياسة حماية البيانات الشخصية وأوافق على معالجة بياناتي الشخصية.",
+        submit: "تسجيل",
+        success: "تم التسجيل بنجاح! شكراً لك.",
+        entrepreneur: "كن رائد أعمال - احصل على رمز الخصم!",
+        selectPlaceholder: "يرجى الاختيار",
+        footer: {
+          disclaimer: "هذا الموقع ليس الموقع الرسمي لشركة فارماسي",
+          copyright: "© 2025 جميع الحقوق محفوظة",
+          manager: "مدير بلاتينيوم سيفجي إيبش",
+          email: "📧 sevgiibis48@gmail.com",
+          phone: "📞 +90 544 898 04 84"
+        }
+      }
+    };
+
+  // Dil değiştirme fonksiyonu
+  function changeLanguage(lang) {
+    // Aktif dil butonunu güncelle
+    document.querySelectorAll('.lang-switcher-link').forEach(link => {
+      link.classList.remove('active');
+      if (link.dataset.lang === lang) {
+        link.classList.add('active');
+      }
+    });
+
+    // Sayfa içeriğini çevir
+    document.querySelector('.welcome-message h1').textContent = translations[lang].welcome;
+    document.querySelector('h2').textContent = translations[lang].register;
+    
+    // Form alanlarını çevir
+    document.querySelector('label[for="ad"]').textContent = translations[lang].name;
+    document.querySelector('label[for="soyad"]').textContent = translations[lang].surname;
+    document.querySelector('label[for="telefon"]').textContent = translations[lang].phone;
+    document.querySelector('label[for="email"]').textContent = translations[lang].email;
+    document.querySelector('label[for="sebep"]').textContent = translations[lang].reason;
+    
+    // Seçenekleri çevir
+    const reasonSelect = document.getElementById('sebep');
+    reasonSelect.options[1].text = translations[lang].reasonOptions.suspended;
+    reasonSelect.options[2].text = translations[lang].reasonOptions.order;
+    reasonSelect.options[3].text = translations[lang].reasonOptions.new;
+    
+    // KVKK metnini çevir
+    document.querySelector('.kvkk-label').textContent = translations[lang].kvkk;
+
+    document.getElementById('entrepreneurLink').textContent = translations[lang].entrepreneur;
+
+    reasonSelect.options[0].text = translations[lang].selectPlaceholder;
+
+    document.documentElement.lang = lang;
+
+    document.querySelector('[data-key="chat"]').textContent = translations[lang].chat;
+    document.querySelector('.logo').textContent = translations[lang].logo;
+
+
+
+    
+    // Gönder butonunu çevir
+    document.querySelector('button[type="submit"]').textContent = translations[lang].submit;
+    
+    // Footer çevirisi
+    document.querySelector('.footer-upper-text').textContent = translations[lang].footer.disclaimer;
+    document.querySelector('footer p:nth-of-type(2)').textContent = translations[lang].footer.copyright;
+    document.querySelector('footer p:nth-of-type(3)').textContent = translations[lang].footer.manager;
+    document.querySelector('footer p:nth-of-type(4)').textContent = translations[lang].footer.email;
+    document.querySelector('footer p:nth-of-type(5)').textContent = translations[lang].footer.phone;
+    
+    // RTL (sağdan sola) desteği
+    if (lang === 'ar') {
+      document.documentElement.dir = 'rtl';
+      document.body.style.textAlign = 'right';
+      document.body.style.fontFamily = "'Tajawal', sans-serif";
+    } else {
+      document.documentElement.dir = 'ltr';
+      document.body.style.textAlign = 'left';
+      document.body.style.fontFamily = '';
+    }
+  }
+
+  // Dil butonlarına tıklama olayı ekle
+  document.querySelectorAll('.lang-switcher-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      changeLanguage(this.dataset.lang);
+    });
+  });
+
+  // Form gönderme işlemi
+  const form = document.getElementById('kayitForm');
+  const formMessage = document.getElementById('formMessage');
+  const submitButton = form.querySelector('button[type="submit"]');
+  const originalText = submitButton.textContent;
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    submitButton.textContent = translations[document.documentElement.lang === 'ar' ? 'ar' : 'tr'].submit + '...';
+    submitButton.disabled = true;
+
+    formMessage.style.color = '#666';
+    formMessage.textContent = '';
+
+    const formData = new FormData(form);
+    const data = new URLSearchParams();
+    for (const pair of formData) {
+      data.append(pair[0], pair[1]);
+    }
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data
+      });
+
+      if (response.ok) {
+        formMessage.style.color = 'green';
+        formMessage.textContent = translations[document.documentElement.lang === 'ar' ? 'ar' : 'tr'].success;
+        form.reset();
+      } else {
+        throw new Error('Sunucu hatası oluştu.');
+      }
+    } catch (error) {
+      formMessage.style.color = 'red';
+      formMessage.textContent = document.documentElement.lang === 'ar' ? 
+        "حدث خطأ. يرجى المحاولة مرة أخرى." : "Bir hata oluştu. Lütfen tekrar deneyin.";
+      console.error('Form gönderme hatası:', error);
+    } finally {
+      submitButton.textContent = translations[document.documentElement.lang === 'ar' ? 'ar' : 'tr'].submit;
+      submitButton.disabled = false;
+    }
+  });
+
+  // Resim modalı işlevselliği
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImg');
+  const closeBtn = document.querySelector('.modal .close');
+  const images = document.querySelectorAll('.campaign-box img');
+
+  images.forEach(img => {
+    img.style.cursor = "pointer";
+    img.addEventListener('click', function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+    });
+  });
+
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Varsayılan dili yükle
+  changeLanguage('tr');
+});
   </script>
 </body>
 </html>
