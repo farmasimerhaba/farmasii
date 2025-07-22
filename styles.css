@@ -37,10 +37,12 @@ header {
 .menu {
   list-style: none;
   display: flex;
+  flex-wrap: wrap; /* satırlar halinde taşmasını sağlar */
   gap: 15px;
   margin: 0;
   padding: 0;
 }
+
 
 .menu a {
   text-decoration: none;
@@ -248,10 +250,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .main-section {
-    flex-direction: column;
-    padding-bottom: 40px;
+  .menu {
+    flex-wrap: wrap;
   }
+  .menu li {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
 
   .slider-wrapper,
   .form-box {
@@ -304,6 +311,5 @@ footer {
     text-overflow: clip !important;  /* ... olmadan tam görünür */
   }
 }
-
 
 
