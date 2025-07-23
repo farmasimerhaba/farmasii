@@ -198,55 +198,7 @@
   </style>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Form gönderme kodu (senin zaten var olan)
-      const form = document.getElementById('kayitForm');
-      const formMessage = document.getElementById('formMessage');
-      const submitButton = form.querySelector('button[type="submit"]');
-      const originalText = submitButton.textContent;
-
-      if (!form) {
-        console.error('Form bulunamadı!');
-        return;
-      }
-
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        submitButton.textContent = 'Gönderiliyor...';
-        submitButton.disabled = true;
-
-        formMessage.style.color = '#666';
-        formMessage.textContent = '';
-
-        const formData = new FormData(form);
-        const data = new URLSearchParams();
-        for (const pair of formData) {
-          data.append(pair[0], pair[1]);
-        }
-
-        try {
-          const response = await fetch(form.action, {
-            method: 'POST',
-            body: data
-          });
-
-          if (response.ok) {
-            formMessage.style.color = 'green';
-            formMessage.textContent = 'Kayıt başarılı! Teşekkürler.';
-            form.reset();
-          } else {
-            throw new Error('Sunucu hatası oluştu.');
-          }
-        } catch (error) {
-          formMessage.style.color = 'red';
-          formMessage.textContent = 'Bir hata oluştu. Lütfen tekrar deneyin.';
-          console.error('Form gönderme hatası:', error);
-        } finally {
-          submitButton.textContent = originalText;
-          submitButton.disabled = false;
-        }
-      });
+    
 
       // Modal için resim tıklama olayları
       const modal = document.getElementById('imageModal');
@@ -272,7 +224,6 @@
           modal.style.display = "none";
         }
       });
-    });
     document.addEventListener('DOMContentLoaded', function () {
   // Dil çevirileri
 
@@ -365,7 +316,12 @@
     reasonSelect.options[3].text = translations[lang].reasonOptions.new;
     
     // KVKK metnini çevir
-    document.querySelector('.kvkk-label').textContent = translations[lang].kvkk;
+  // KVKK metnini güncellerken:
+document.querySelector('.kvkk-label').innerHTML = `
+  <input type="checkbox" id="kvkk" name="kvkk" required />
+  ${translations[lang].kvkk}
+`;
+
 
     document.getElementById('entrepreneurLink').textContent = translations[lang].entrepreneur;
 
@@ -454,30 +410,7 @@
     }
   });
 
-  // Resim modalı işlevselliği
-  const modal = document.getElementById('imageModal');
-  const modalImg = document.getElementById('modalImg');
-  const closeBtn = document.querySelector('.modal .close');
-  const images = document.querySelectorAll('.campaign-box img');
 
-  images.forEach(img => {
-    img.style.cursor = "pointer";
-    img.addEventListener('click', function () {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      modalImg.alt = this.alt;
-    });
-  });
-
-  closeBtn.onclick = function () {
-    modal.style.display = "none";
-  };
-
-  window.addEventListener('click', function (event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
 
   // Varsayılan dili yükle
   changeLanguage('tr');
