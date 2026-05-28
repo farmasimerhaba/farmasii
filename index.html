@@ -3,281 +3,461 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Farmasi Yeni Kayıt</title>
+  <title>Farmasi Yeni Kayıt | FarmaSevgi</title>
+  <meta
+    name="description"
+    content="Farmasi yeni kayıt, ürün siparişi ve askıda hesap desteği için resmî olmayan bilgilendirme ve başvuru sayfası."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17185649904"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-17185649904');
-</script>
-
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17185649904"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "AW-17185649904");
+  </script>
 </head>
 <body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="#top" class="logo">FarmaSevgi</a>
 
-  <header>
-    <div class="container navbar">
-      <a href="index.html" class="logo">FarmaSevgi</a>
+        <nav aria-label="Ana menü">
+          <ul class="menu">
+            <li><a href="#kampanyalar">Kampanyalar</a></li>
+            <li><a href="#avantajlar">Avantajlar</a></li>
+            <li><a href="#kayit">Kayıt</a></li>
+            <li>
+              <a
+                href="https://wa.me/905448980484"
+                target="_blank"
+                rel="noreferrer"
+                class="menu-cta"
+              >
+                WhatsApp Destek
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <ul class="menu" style="display: flex; list-style: none; margin: 0; padding: 0; width: 100%; align-items: center;">
-        <li style="flex: 1;"></li> <li style="margin: 0 20px;">
-          <a href="https://wa.me/905448980484" target="_blank" class="chat-button" data-key="chat" style="color: #fff; text-decoration: none;">Sohbet</a>
-        </li>
-        <li style="flex: 1; display: flex; justify-content: flex-end; gap: 10px;">
-        </li>
-      </ul>
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Farmasi kayıt ve destek sayfası</p>
+            <h1>Farmasi'ye avantajlı kayıt için doğru yerdesiniz.</h1>
+            <p class="hero-text">
+              Yeni kayıt, ürün siparişi ya da askıda hesap desteği için formu doldurun.
+              Size en uygun yönlendirmeyi kısa sürede paylaşalım.
+            </p>
 
-    </div>
-  </header>
+            <div class="hero-actions">
+              <a href="#kayit" class="primary-button">Formu Doldur</a>
+              <a
+                href="https://www.farmasi.com.tr/sevgiibis48gmailcom/register/beautyinfluencer"
+                target="_blank"
+                rel="noreferrer"
+                class="secondary-button"
+              >
+                Girişimci Ol
+              </a>
+            </div>
 
+            <ul class="trust-list" aria-label="Sunulan destek alanları">
+              <li>Yeni üye kaydı</li>
+              <li>Ürün siparişi yönlendirmesi</li>
+              <li>Askıda hesap desteği</li>
+            </ul>
+          </div>
 
-  <div class="welcome-message container">
-    <h1>Hoşgeldiniz</h1>
-  </div>
+          <aside class="hero-panel">
+            <div class="panel-badge">Platin Müdür Sevgi İbiş</div>
+            <h2>Kayıt sürecinde size hızlı ve net destek sunalım.</h2>
+            <p>
+              Kısa formu doldurun, ihtiyacınıza uygun kayıt veya sipariş sürecini
+              birlikte netleştirelim.
+            </p>
 
-  <div class="container main-section">
+            <div class="mini-cards">
+              <article class="mini-card">
+                <strong>Hızlı dönüş</strong>
+                <span>Başvuru sonrası iletişim kolaylığı</span>
+              </article>
+              <article class="mini-card">
+                <strong>Net süreç</strong>
+                <span>Dağınık bilgi yerine tek noktadan destek</span>
+              </article>
+              <article class="mini-card">
+                <strong>WhatsApp erişimi</strong>
+                <span>Doğrudan iletişim ve soru yanıtlama</span>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-    <div class="slider-wrapper">
-      <div class="slider">
-        <div class="campaign-box">
-          <img src="far.jpg" alt="Kampanya 1" />
+      <section class="info-strip">
+        <div class="container info-strip-grid">
+          <div>
+            <span class="strip-label">Destek Alanları</span>
+            <p>Yeni kayıt, sipariş yönlendirmesi ve hesap desteği.</p>
+          </div>
+          <div>
+            <span class="strip-label">İletişim</span>
+            <p>WhatsApp ve e-posta üzerinden hızlı geri dönüş.</p>
+          </div>
+          <div>
+            <span class="strip-label">Sayfa Amacı</span>
+            <p>Bilgiyi sadeleştirmek ve başvuru sürecini kolaylaştırmak.</p>
+          </div>
         </div>
-        <div class="campaign-box">
-          <img src="far1.jpg" alt="Kampanya 2" />
+      </section>
+
+      <section id="kampanyalar" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Güncel kampanyalar</p>
+            <h2>Farmasi fırsatlarını tek bakışta inceleyin.</h2>
+            <p>
+              Kampanya görsellerini büyüterek detaylı inceleyebilir, size uygun
+              fırsat için hemen iletişime geçebilirsiniz.
+            </p>
+          </div>
+
+          <div class="campaign-marquee" aria-label="Kampanya görselleri">
+            <div class="campaign-track">
+              <button class="campaign-card" type="button">
+                <img src="far.jpg" alt="Farmasi kampanya görseli 1" />
+              </button>
+              <button class="campaign-card" type="button">
+                <img src="far1.jpg" alt="Farmasi kampanya görseli 2" />
+              </button>
+              <button class="campaign-card" type="button">
+                <img src="far2.jpg" alt="Farmasi kampanya görseli 3" />
+              </button>
+              <button class="campaign-card" type="button">
+                <img src="far3.jpg" alt="Farmasi kampanya görseli 4" />
+              </button>
+              <button class="campaign-card" type="button">
+                <img src="far4.jpg" alt="Farmasi kampanya görseli 5" />
+              </button>
+              <button class="campaign-card" type="button" aria-hidden="true" tabindex="-1">
+                <img src="far.jpg" alt="Farmasi kampanya görseli 1" />
+              </button>
+              <button class="campaign-card" type="button" aria-hidden="true" tabindex="-1">
+                <img src="far1.jpg" alt="Farmasi kampanya görseli 2" />
+              </button>
+              <button class="campaign-card" type="button" aria-hidden="true" tabindex="-1">
+                <img src="far2.jpg" alt="Farmasi kampanya görseli 3" />
+              </button>
+              <button class="campaign-card" type="button" aria-hidden="true" tabindex="-1">
+                <img src="far3.jpg" alt="Farmasi kampanya görseli 4" />
+              </button>
+              <button class="campaign-card" type="button" aria-hidden="true" tabindex="-1">
+                <img src="far4.jpg" alt="Farmasi kampanya görseli 5" />
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="campaign-box">
-          <img src="far2.jpg" alt="Kampanya 3" />
+      </section>
+
+      <section id="avantajlar" class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Neden FarmaSevgi?</p>
+            <h2>Başvurunuzu kolaylaştıran, destek odaklı bir deneyim.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Hızlı başvuru</h3>
+              <p>
+                Kısa ve anlaşılır form sayesinde kayıt veya sipariş talebinizi
+                dakikalar içinde iletebilirsiniz.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Doğru yönlendirme</h3>
+              <p>
+                İhtiyacınıza göre yeni kayıt, ürün siparişi veya askıda hesap
+                desteği konusunda net bilgi alırsınız.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Kolay iletişim</h3>
+              <p>
+                WhatsApp ve iletişim bilgileri sayesinde sorularınızı beklemeden
+                doğrudan iletebilirsiniz.
+              </p>
+            </article>
+          </div>
         </div>
-        <div class="campaign-box">
-          <img src="far3.jpg" alt="Kampanya 4" />
+      </section>
+
+      <section id="kayit" class="section">
+        <div class="container form-section">
+          <div class="form-intro">
+            <p class="eyebrow">Kayıt formu</p>
+            <h2>Bilgilerinizi bırakın, sizinle en kısa sürede iletişime geçelim.</h2>
+            <p>
+              Başvuru nedeninizi seçin, iletişim bilgilerinizi bırakın; size uygun
+              süreci hızlıca paylaşalım.
+            </p>
+
+            <div class="contact-card">
+              <p class="contact-title">İletişim Bilgileri</p>
+              <a href="mailto:sevgiibis48@gmail.com">sevgiibis48@gmail.com</a>
+              <a href="tel:+905448980484">+90 544 898 04 84</a>
+            </div>
+          </div>
+
+          <form
+            id="kayitForm"
+            class="form-card"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbwUkkQuUIcQSzDLxz3QRIntHdUVWqw3B9MEgSm75b4-fS89u8Vk28LGdqc2O0TULUKH/exec"
+          >
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="ad">Ad</label>
+                <input type="text" id="ad" name="ad" autocomplete="given-name" required />
+              </div>
+              <div class="form-group">
+                <label for="soyad">Soyad</label>
+                <input type="text" id="soyad" name="soyad" autocomplete="family-name" required />
+              </div>
+              <div class="form-group">
+                <label for="telefon">Telefon</label>
+                <input
+                  type="tel"
+                  id="telefon"
+                  name="telefon"
+                  autocomplete="tel"
+                  pattern="[0-9+ ]+"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">E-posta</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+              </div>
+              <div class="form-group form-group-full">
+                <label for="sebep">Kayıt Sebebi</label>
+                <select id="sebep" name="sebep" required>
+                  <option value="">Lütfen seçin</option>
+                  <option value="Hesabım askıda">Hesabım askıda</option>
+                  <option value="Ürün siparişi">Ürün siparişi</option>
+                  <option value="Yeni kayıt">Yeni kayıt</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="kvkk" class="kvkk-row">
+              <input type="checkbox" id="kvkk" name="kvkk" required />
+              <span>
+                KVKK Aydınlatma Metni'ni okudum ve kişisel verilerimin işlenmesine onay
+                veriyorum.
+              </span>
+            </label>
+
+            <div class="form-actions">
+              <button type="submit" id="submitButton" class="primary-button primary-button-wide">
+                İndirim Şifreni Hemen Al
+              </button>
+              <a
+                href="https://www.farmasi.com.tr/sevgiibis48gmailcom/register/beautyinfluencer"
+                target="_blank"
+                rel="noreferrer"
+                class="text-link"
+              >
+                Girişimci olmak için direkt kayıt sayfasına git
+              </a>
+            </div>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
         </div>
-        <div class="campaign-box">
-          <img src="far4.jpg" alt="Kampanya 5" />
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#top" class="logo footer-logo">FarmaSevgi</a>
+          <p class="footer-note">
+            Bu site Farmasi Enternasyonal resmî web sitesi değildir. Bilgilendirme ve
+            iletişim amacıyla hazırlanmıştır.
+          </p>
         </div>
-        <div class="campaign-box">
-          <img src="far.jpg" alt="Kampanya 1" />
+
+        <div class="footer-contact">
+          <p class="footer-title">İletişim</p>
+          <a href="mailto:sevgiibis48@gmail.com">sevgiibis48@gmail.com</a>
+          <a href="tel:+905448980484">+90 544 898 04 84</a>
+          <p>Platin Müdür Sevgi İbiş</p>
         </div>
-        <div class="campaign-box">
-          <img src="far1.jpg" alt="Kampanya 2" />
-        </div>
-        <div class="campaign-box">
-          <img src="far2.jpg" alt="Kampanya 3" />
-        </div>
-        <div class="campaign-box">
-          <img src="far3.jpg" alt="Kampanya 4" />
-        </div>
-        <div class="campaign-box">
-          <img src="far4.jpg" alt="Kampanya 5" />
+
+        <div>
+          <p class="footer-title">Sosyal Medya</p>
+          <div class="social-media">
+            <a
+              href="https://www.facebook.com/sevgiibisfarmasifethiye"
+              class="social-link"
+              title="Facebook"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33V21.88C18.343 21.128 22 16.991 22 12z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/sevgiibisfarmasifethiye/"
+              class="social-link"
+              title="Instagram"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.5 2A5.5 5.5 0 0 0 2 7.5v9A5.5 5.5 0 0 0 7.5 22h9a5.5 5.5 0 0 0 5.5-5.5v-9A5.5 5.5 0 0 0 16.5 2h-9Zm0 2h9A3.5 3.5 0 0 1 20 7.5v9a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 16.5v-9A3.5 3.5 0 0 1 7.5 4Zm9.75 1a.75.75 0 0 0-.75.75v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-.75-.75ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/905448980484"
+              class="social-link"
+              title="WhatsApp"
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.004 2C6.474 2 2 6.356 2 11.773c0 1.953.583 3.766 1.587 5.291L2 22l5.123-1.631c1.45.798 3.123 1.26 4.88 1.26 5.53 0 10.004-4.356 10.004-9.773C22.007 6.356 17.533 2 12.004 2Zm0 1.982c4.45 0 8.02 3.49 8.02 7.791s-3.57 7.79-8.02 7.79a7.927 7.927 0 0 1-4.187-1.147l-.29-.175-3.025.964.986-2.917-.19-.3a7.673 7.673 0 0 1-1.31-4.215c0-4.3 3.57-7.791 8.02-7.791Zm-2.124 4.723c-.172-.388-.353-.398-.516-.406-.133-.007-.285-.007-.438-.007a.836.836 0 0 0-.606.285c-.207.23-.797.777-.797 1.891 0 1.114.817 2.19.931 2.34.114.15 1.56 2.495 3.844 3.394 1.9.747 2.289.598 2.7.56.414-.038 1.327-.54 1.516-1.064.19-.524.19-.974.133-1.065-.057-.09-.21-.15-.438-.26-.23-.11-1.362-.674-1.573-.75-.21-.075-.365-.112-.516.113-.153.23-.59.748-.724.903-.133.15-.266.17-.494.06-.229-.11-.967-.355-1.842-1.13-.682-.607-1.14-1.358-1.272-1.587-.133-.23-.014-.354.1-.46.103-.095.23-.25.343-.375.115-.127.153-.225.23-.375.075-.15.038-.285-.02-.398-.058-.11-.516-1.275-.71-1.7Z" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div style="text-align:center; margin: 30px 0;">
-    <a id="entrepreneurLink" href="https://www.farmasi.com.tr/sevgiibis48gmailcom/register/beautyinfluencer" style="color: #dc579e; font-weight: bold; font-size: 18px; text-decoration: underline;">
-      Girişimci Ol - İndirim Şifreni Al!
-    </a>
-  </div>
 
-  <h2>Kayıt Ol</h2>
-  <form id="kayitForm" method="POST" action="https://script.google.com/macros/s/AKfycbwUkkQuUIcQSzDLxz3QRIntHdUVWqw3B9MEgSm75b4-fS89u8Vk28LGdqc2O0TULUKH/exec">
-    <div class="form-group">
-      <label for="ad">Ad</label>
-      <input type="text" id="ad" name="ad" required />
-    </div>
-    <div class="form-group">
-      <label for="soyad">Soyad</label>
-      <input type="text" id="soyad" name="soyad" required />
-    </div>
-    <div class="form-group">
-      <label for="telefon">Telefon</label>
-      <input type="tel" id="telefon" name="telefon" pattern="[0-9+ ]+" required />
-    </div>
-    <div class="form-group">
-      <label for="email">E-posta</label>
-      <input type="email" id="email" name="email" required />
-    </div>
-    <div class="form-group">
-      <label for="sebep">Kayıt Sebebi</label>
-      <select id="sebep" name="sebep" required>
-        <option value="">Lütfen seçin</option>
-        <option value="Hesabım askıda">Hesabım Askıda</option>
-        <option value="Ürün siparişi">Ürün Siparişi</option>
-        <option value="Yeni kayıt">Yeni Kayıt</option>
-      </select>
-    </div>
-    <div class="form-group" style="margin-bottom: 10px;">
-      <label for="kvkk" class="kvkk-label">
-        <input type="checkbox" id="kvkk" name="kvkk" required />
-        KVKK Aydınlatma Metni’ni okudum ve kişisel verilerimin işlenmesine onay veriyorum.
-      </label>
-    </div>
-
-    <div class="form-group" style="text-align: center;">
-      <button type="submit">🎁 İndirim Şifreni Hemen Al!</button>
-    </div>
-    <div id="formMessage" style="text-align:center; margin-top:25px; font-weight:bold;font-size:18px;"></div>
-  </form>
-
-  <footer>
-    <div class="container">
-      <p class="footer-upper-text">Bu Site Farmasi Enternasyonal Resmi Web Sitesi Değildir</p>
-      <p>&copy; 2025 Siteniz. Tüm hakları saklıdır.</p>
-      <p style="text-align:center; font-weight: 600; font-size: 1.1rem; margin: 10px 0 5px; color: #ffffff;">
-        Platin Müdür Sevgi İbiş
-      </p>
-      <p style="text-align:center; font-size: 1rem; color: #ffffff; margin: 8px 0;">
-        📧 sevgiibis48@gmail.com
-      </p>
-      <p style="text-align:center; font-size: 1rem; color: #ffffff; margin: 8px 0;">
-        📞 +90 544 898 04 84
-      </p>
-
-      <div class="social-media" style="display: flex; gap: 15px; margin-top: 10px; justify-content: center;">
-        <a href="https://www.facebook.com/sevgiibisfarmasifethiye" class="facebook" title="Facebook" aria-label="Facebook" target="_blank" style="color:#1877F2;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33V21.88C18.343 21.128 22 16.991 22 12z"/>
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/sevgiibisfarmasifethiye/" class="instagram" title="Instagram" aria-label="Instagram" target="_blank" style="color:#E4405F;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7.5 2A5.5 5.5 0 0 0 2 7.5v9A5.5 5.5 0 0 0 7.5 22h9a5.5 5.5 0 0 0 5.5-5.5v-9A5.5 5.5 0 0 0 16.5 2h-9Zm0 2h9A3.5 3.5 0 0 1 20 7.5v9a3.5 3.5 0 0 1-3.5 3.5h-9A3.5 3.5 0 0 1 4 16.5v-9A3.5 3.5 0 0 1 7.5 4Zm9.75 1a.75.75 0 0 0-.75.75v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-.75-.75ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"/>
-          </svg>
-        </a>
-        <a href="https://wa.me/905448980484" class="whatsapp" title="WhatsApp" aria-label="WhatsApp" target="_blank" style="color:#25D366;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12.004 2C6.474 2 2 6.356 2 11.773c0 1.953.583 3.766 1.587 5.291L2 22l5.123-1.631c1.45.798 3.123 1.26 4.88 1.26 5.53 0 10.004-4.356 10.004-9.773C22.007 6.356 17.533 2 12.004 2Zm0 1.982c4.45 0 8.02 3.49 8.02 7.791s-3.57 7.79-8.02 7.79a7.927 7.927 0 0 1-4.187-1.147l-.29-.175-3.025.964.986-2.917-.19-.3a7.673 7.673 0 0 1-1.31-4.215c0-4.3 3.57-7.791 8.02-7.791Zm-2.124 4.723c-.172-.388-.353-.398-.516-.406-.133-.007-.285-.007-.438-.007a.836.836 0 0 0-.606.285c-.207.23-.797.777-.797 1.891 0 1.114.817 2.19.931 2.34.114.15 1.56 2.495 3.844 3.394 1.9.747 2.289.598 2.7.56.414-.038 1.327-.54 1.516-1.064.19-.524.19-.974.133-1.065-.057-.09-.21-.15-.438-.26-.23-.11-1.362-.674-1.573-.75-.21-.075-.365-.112-.516.113-.153.23-.59.748-.724.903-.133.15-.266.17-.494.06-.229-.11-.967-.355-1.842-1.13-.682-.607-1.14-1.358-1.272-1.587-.133-.23-.014-.354.1-.46.103-.095.23-.25.343-.375.115-.127.153-.225.23-.375.075-.15.038-.285-.02-.398-.058-.11-.516-1.275-.71-1.7Z"/>
-          </svg>
-        </a>
+      <div class="container footer-bottom">
+        <p>&copy; 2026 FarmaSevgi. Tüm hakları saklıdır.</p>
       </div>
-    </div>
-  </footer>
-
-  <div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg" />
+    </footer>
   </div>
 
-  <style>
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      padding-top: 60px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.9);
-    }
-
-    .modal-content {
-      margin: auto;
-      display: block;
-      max-width: 90%;
-      max-height: 80vh;
-      border-radius: 10px;
-      animation: zoom 0.3s ease;
-    }
-
-    @keyframes zoom {
-      from {transform: scale(0.5);}
-      to {transform: scale(1);}
-    }
-
-    .close {
-      position: absolute;
-      top: 25px;
-      right: 45px;
-      color: #fff;
-      font-size: 40px;
-      font-weight: bold;
-      cursor: pointer;
-      user-select: none;
-    }
-  </style>
+  <div id="imageModal" class="modal" aria-hidden="true">
+    <button type="button" class="modal-close" aria-label="Görseli kapat">&times;</button>
+    <img class="modal-image" id="modalImg" alt="" />
+  </div>
 
   <script>
-    // Modal için resim tıklama olayları
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImg');
-    const closeBtn = document.querySelector('.modal .close');
-    const images = document.querySelectorAll('.campaign-box img');
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".modal-close");
+    const campaignCards = document.querySelectorAll(".campaign-card");
+    const fallbackImage =
+      "data:image/svg+xml;charset=UTF-8," +
+      encodeURIComponent(
+        "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 1000'>" +
+          "<defs>" +
+            "<linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>" +
+              "<stop offset='0%' stop-color='#7f2130' />" +
+              "<stop offset='100%' stop-color='#d7aa75' />" +
+            "</linearGradient>" +
+          "</defs>" +
+          "<rect width='800' height='1000' fill='url(#g)' />" +
+          "<text x='50%' y='46%' text-anchor='middle' fill='white' font-size='54' font-family='Arial, sans-serif'>Kampanya Görseli</text>" +
+          "<text x='50%' y='54%' text-anchor='middle' fill='rgba(255,255,255,0.82)' font-size='28' font-family='Arial, sans-serif'>Görsel dosyasını bu klasöre ekleyin</text>" +
+        "</svg>"
+      );
 
-    images.forEach(img => {
-      img.style.cursor = "pointer";
-      img.addEventListener('click', function () {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        modalImg.alt = this.alt;
+    campaignCards.forEach((card) => {
+      const img = card.querySelector("img");
+
+      img.addEventListener("error", () => {
+        img.src = fallbackImage;
+      }, { once: true });
+
+      card.addEventListener("click", () => {
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
       });
     });
 
-    closeBtn.onclick = function () {
-      modal.style.display = "none";
-    };
+    closeBtn.addEventListener("click", () => {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+    });
 
-    window.addEventListener('click', function (event) {
+    window.addEventListener("click", (event) => {
       if (event.target === modal) {
-        modal.style.display = "none";
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
       }
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
-      // Sadece Türkçe çevirileri (sadece form için) içerir
-      const translations = {
-        tr: {
-          submit: "🎁 İndirim Şifreni Hemen Al!",
-          success: "Kayıt başarılı! Teşekkürler."
-        }
-      };
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+      }
+    });
 
-      // Form gönderme işlemi
-      const form = document.getElementById('kayitForm');
-      const formMessage = document.getElementById('formMessage');
-      const submitButton = form.querySelector('button[type="submit"]');
-      const t = translations['tr'];
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("kayitForm");
+      const formMessage = document.getElementById("formMessage");
+      const submitButton = document.getElementById("submitButton");
+      const defaultButtonText = submitButton.textContent;
 
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
         submitButton.textContent = "Kaydediliyor...";
         submitButton.disabled = true;
-
-        formMessage.style.color = '#666';
-        formMessage.textContent = '';
+        formMessage.textContent = "";
+        formMessage.className = "form-message";
 
         const formData = new FormData(form);
         const data = new URLSearchParams();
-        for (const pair of formData) {
-          data.append(pair[0], pair[1]);
+
+        for (const [key, value] of formData.entries()) {
+          data.append(key, value);
         }
 
         try {
           const response = await fetch(form.action, {
-            method: 'POST',
+            method: "POST",
             body: data
           });
 
-          if (response.ok) {
-            formMessage.style.color = 'green';
-            formMessage.textContent = t.success;
-            form.reset();
-          } else {
-            throw new Error('Sunucu hatası oluştu.');
+          if (!response.ok) {
+            throw new Error("Sunucu hatası");
           }
+
+          form.reset();
+          formMessage.textContent = "Kaydınız başarıyla alındı. Teşekkür ederiz.";
+          formMessage.classList.add("success");
         } catch (error) {
-          formMessage.style.color = 'red';
           formMessage.textContent = "Bir hata oluştu. Lütfen tekrar deneyin.";
-          console.error('Form gönderme hatası:', error);
+          formMessage.classList.add("error");
+          console.error("Form gönderme hatası:", error);
         } finally {
-          submitButton.textContent = t.submit;
+          submitButton.textContent = defaultButtonText;
           submitButton.disabled = false;
         }
       });
-      
     });
   </script>
 </body>
